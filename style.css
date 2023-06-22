@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --Cyan: hsl(179, 62%, 43%);
+    --Bright-Yellow: hsl(71, 73%, 54%);
+    --Light-Gray: hsl(204, 43%, 93%);
+    --Grayish-Blue: hsl(218, 22%, 67%);
+}
+body{
+    height: 100vh;
+    display: grid;
+    font-family: 'Karla', sans-serif;
+    place-items: center;
+}
+.continer{
+    width: 270px;
+    min-width: 270px;
+    margin-top: 1rem;
+}
+.top{
+    width: 100%;
+    padding: 6%;
+    box-shadow: 0px 0px 2px #3d3d3d70;
+    min-width: 270px;
+    border-radius: 5px 5px 0 0;
+}
+.top-text-in-top-box h2{
+    font-size: 148%;
+    color: var(--Cyan);
+    margin-bottom: 20px;
+}
+.bottom-text-in-top-box h3{
+    color: var(--Bright-Yellow);
+    margin-bottom: 15px;
+    font-size: 97%;
+}
+.bottom-text-in-top-box p{
+    color: var(--Grayish-Blue);
+    line-height: 150%;
+}
+.box{
+    padding: 6%;
+    color: var(--Light-Gray);
+}
+.top-in-bottom{
+    background-color: hsl(180, 62%, 43%);
+}
+.bottom-in-bottom{
+    background: hsl(179, 61%, 49%);
+    border-radius: 0 0 5px 5px;
+}
+.top-in-bottom h3{
+    margin-bottom: 17px;
+}
+.text-of-top-in-bottom-box{
+    margin-bottom: 12px;
+    color: hsl(179, 61%, 49%);
+}
+.text-of-top-in-bottom-box b{
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--Light-Gray);
+}
+.main-text-in-top-in-bottom-box{
+    color: hsl(220, 5%, 78%);
+    margin-bottom: 30px;
+}
+.btn{
+    width: 100%;
+    border-radius: 6px;
+    max-width: 301px;
+    background-color: var(--Bright-Yellow);
+    border: 1px solid hsl(81, 100%, 50%);
+    padding: 15px;
+    outline: none;
+    font-weight: 400;
+    color: var(--Light-Gray);
+    box-shadow: 1px 1px 5px #8b8b8b;
+    transition: all .5s;
+}
+.bottom-in-bottom h3{
+    margin-bottom: 17px;
+}
+.bottom-in-bottom p{
+    color: hsl(0, 0%, 85%);
+    font-size: 16px;
+    line-height: 170%;
+}
+.btn:hover{
+    background-color: hsl(81, 100%, 50%);
+}
+@media screen and (min-width:700px) {
+    *{
+        font-size: 110%;
+    }
+    .continer{
+        width: 70%;
+    }
+    .bottom{
+        display: flex;
+    }
+    .box{
+        width: 50%;
+    }
+    .top-in-bottom{
+        border-radius: 0 0 0 5px;
+    }
+    .bottom-in-bottom{
+        border-radius: 0 0 5px 0;
+    }
+}
